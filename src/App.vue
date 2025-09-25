@@ -1,17 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <div id="app">
+    <OpenLayers />
+  </div> -->
+  <div>
+    <nav>
+      <router-link to="/ShowLayers">图层选择</router-link> |
+      <router-link to="/OpenLayers">天地图</router-link> |
+      <!-- <router-link to="/ShiyanMap">实验课</router-link> | -->
+      <router-link to="/GeoServer">GeoServer</router-link>
+    </nav>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
 <style>
